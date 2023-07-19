@@ -1,4 +1,4 @@
-package day07.practice;
+package day07.practice.copy;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashSet;
