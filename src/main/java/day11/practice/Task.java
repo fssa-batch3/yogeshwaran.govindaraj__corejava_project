@@ -31,7 +31,7 @@ class TaskDAO {
 			one.status = "Pending";
 
 			// Step 04: Execute Insert Query
-			String query = "INSERT INTO task (id, name, status) VALUES (" + one.id + ", '" + one.name + "', '"
+			String query = "INSERT INTO user (id, name, status) VALUES (" + one.id + ", '" + one.name + "', '"
 					+ one.status + "')";
 			int rows = ((java.sql.Statement) stmt).executeUpdate(query);
 			System.out.println("No of rows inserted :" + rows);

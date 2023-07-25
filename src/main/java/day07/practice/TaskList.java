@@ -6,7 +6,7 @@ import java.util.HashSet;
 class Task {
 	
 	private int id;
-	private String name;
+	String name;
 	private LocalDate deadline;
 	
 	public Task(int id, String name, String date) {
@@ -25,6 +25,21 @@ class Task {
 	}
 	public LocalDate printDeadline() {
 		return deadline;
+	}
+
+	public Short getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getDeadLine() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Short getId() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
 public class TaskList{

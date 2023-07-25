@@ -14,7 +14,7 @@ class TestTaskDAO {
     @Test
     void testCreateTask() {
         TaskDAO taskDAO = new TaskDAO();
-        Task task = new Task(4,"Sample Task 3","Pending");
+        Task task = new Task();
 
         assertThrows(SQLException.class, () -> taskDAO.createTask(task));
     }
@@ -22,7 +22,7 @@ class TestTaskDAO {
     @Test
     void validTestCreateTask() {
         TaskDAO taskDAO = new TaskDAO();
-        Task task = new Task(6,"Sample Task 5","Pending");
+        Task task = new Task();
 
         try {
             taskDAO.createTask(task);

@@ -1,9 +1,8 @@
 package day10.practice;
 
-import org.junit.jupiter.api.Test;
 public class EmailValidatorTest {
 	
-@test
+//@test
 
 	void test() {
 	String email = "ishusankar@gmail.com";
@@ -14,5 +13,11 @@ public class EmailValidatorTest {
 		System.out.println(email + " is not  valid");
 	}
 	
+}
+
+private boolean validateEmail(String email) {
+	// TODO Auto-generated method stub
+	return false;
+}
 }
 

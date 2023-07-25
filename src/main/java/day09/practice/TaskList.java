@@ -14,7 +14,10 @@ class Task implements Comparable<Task> {
         this.name = name;
         this.deadline = deadline;
     }
-    public int getId() {
+    public Task(int id2, String name2, LocalDate of) {
+		// TODO Auto-generated constructor stub
+	}
+	public int getId() {
         return id;
     }
     public String getName() {
