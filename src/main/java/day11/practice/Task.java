@@ -1,5 +1,10 @@
 package day11.practice;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.mysql.cj.xdevapi.Statement;
+
 import day11.solved.ConnectionUtil;
 
 class Task {
@@ -16,7 +21,7 @@ class TaskDAO {
 			Connection connection = ConnectionUtil.getConnection();
 
 			// Step 02: Create a Statement
-			Statement stmt = connection.createStatement();
+			Statement stmt = (Statement) connection.createStatement();
 
 			// Getting the data
 
@@ -28,11 +33,11 @@ class TaskDAO {
 			// Step 04: Execute Insert Query
 			String query = "INSERT INTO task (id, name, status) VALUES (" + one.id + ", '" + one.name + "', '"
 					+ one.status + "')";
-			int rows = stmt.executeUpdate(query);
+			int rows = ((java.sql.Statement) stmt).executeUpdate(query);
 			System.out.println("No of rows inserted :" + rows);
 
 			// Step 04: close the connection resources
-			ConnectionUtil.close(connection, stmt, null);
+			ConnectionUtil.close(connection, (java.sql.Statement) stmt, null);
 
 		} catch (SQLException e) {
 			throw new DAOException("Error while creating the task.", e);
