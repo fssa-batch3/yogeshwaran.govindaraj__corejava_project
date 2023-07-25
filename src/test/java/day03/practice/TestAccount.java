@@ -1,4 +1,6 @@
-package day03.solved;
+package day03.practice;
+
+import day03.solved.Account;
 
 public class TestAccount {
 	   public static void main(String[] args) {

@@ -1,4 +1,6 @@
-package day04.solved;
+package day04.practice;
+
+import day04.solved.AnimalSolved;
 
 public class TestAnimalSolved {
 	public static void main(String[] args) {
