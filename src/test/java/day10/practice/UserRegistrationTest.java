@@ -25,4 +25,9 @@ public class UserRegistrationTest {
 		}
 	}
 
+	private void register(UserRegistrationTest user) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
