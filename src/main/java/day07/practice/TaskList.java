@@ -9,7 +9,7 @@ class Task {
 	String name;
 	private LocalDate deadline;
 	
-	public Task(int id, String name, String date) {
+	public Task(String name, int id, String date) {
 		this.id = id;
 		this.name = name;
 		
